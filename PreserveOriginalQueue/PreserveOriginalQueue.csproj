@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PackageId>Hangfire.PreserveOriginalQueue</PackageId>
+    <Authors>Travis Frisinger</Authors>
+    <Company>StoneAge Technologies LLC</Company>
+    <Product>Hangfire.PreserveOriginalQueue</Product>
+    <Description>A scheduled task attribute to address a rescheduling bug in HangFire where it places the rescheduled job into the default queue instead of the one it was originally executed on.</Description>
+    <PackageProjectUrl>https://github.com/StoneAgeTechnologies/HangfirePreserveOriginalQueue</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/StoneAgeTechnologies/HangfirePreserveOriginalQueue</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Core" Version="1.6.21" />
+  </ItemGroup>
+
+</Project>
