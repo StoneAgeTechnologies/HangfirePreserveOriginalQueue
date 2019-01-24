@@ -1,7 +1,7 @@
 # HangfirePreserveOriginalQueue
 A scheduled task attribute to address a rescheduling bug in HangFire where it places the rescheduled job into the default queue instead of the one it was originally executed on. 
 
-## Useage
+## Usage
 
 Annotate your scheduled task class with the attribute
 ```
@@ -11,7 +11,7 @@ public class UserSyncTask : IUserSyncTask{
 }
 ```
 
-And when configuring hangfire add the filter
+And then add the filter to your Hangfire configuration
 ```
  GlobalConfiguration.Configuration.UseFilter(new PreserveOriginalQueueAttribute());
 ```
