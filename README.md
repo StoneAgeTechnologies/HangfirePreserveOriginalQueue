@@ -13,5 +13,5 @@ public class UserSyncTask : IUserSyncTask{
 
 And then add the filter to your Hangfire configuration
 ```
- GlobalConfiguration.Configuration.UseFilter(new PreserveOriginalQueueAttribute());
+GlobalConfiguration.Configuration.UseFilter(new PreserveOriginalQueueAttribute());
 ```
